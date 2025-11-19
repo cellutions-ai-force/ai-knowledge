@@ -63,26 +63,6 @@ Query → Retrieve Documents → Cluster Documents → Create Subsets
 - Smaller model handles the heavy lifting of document processing
 - Large model only processes condensed drafts
 
-## Performance
-
-Speculative RAG achieves state-of-the-art results on multiple benchmarks:
-
-- **TriviaQA**: Question answering benchmark
-- **MuSiQue**: Multi-hop reasoning benchmark
-- **PubHealth**: Health claim verification
-- **ARC-Challenge**: Science reasoning benchmark
-
-## Implementation
-
-### Recommended Configuration
-
-| Component | Model | Description |
-|-----------|-------|-------------|
-| RAG Drafter | Mistral 7B | Fine-tuned on instruction-following pairs |
-| RAG Verifier | Mixtral 8x7B | General-purpose evaluation |
-
-### Training Data
-The specialist drafter is fine-tuned using instruction-following pairs from the Open Instruct dataset.
 
 ## Comparison with Traditional RAG
 
